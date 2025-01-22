@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+
+        <form action="" name="myForm" id="myFrom">
+            <h3>Student Details</h3>
+            <div>
+                <label for="fName">First name</label>
+            <input type="text" name="fName" placeholder="Enter first name" id="fName" >
+                
+            </div>
+            
+            <div>
+                <label for="lName">Last name</label>
+                <input type="text" name="lName" placeholder="Enter last name" id="lName" >
+
+            </div>
+          
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="xyz@gmail.com" id="email" >
+
+            </div>
+
+            <div>
+                <label for="bDate">D.O.B</label>
+                <input type="date" name="bDate" id="bDate">
+            </div> 
+    
+         
+            <div id="selectionSection">
+                <label for="gender">Gender</label>
+                <select name="Gender" id="gender" >
+                    <option value="">choose option</option>
+                    <option value="male" name="male">Male</option>
+                    <option value="female" name="female">Female</option>
+                    <option value="other" name="other">Other</option>
+                </select>
+
+                <label for="degree">Degree</label>
+                <select name="degree" id="degree" >
+                    <option value="">choose option</option>
+                    <option value="bTech">B.Tech</option>
+                    <option value="mTech">M.Tech</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="department">Department</label>
+                <select name="department" id="department" >
+                    <option value="">choose option</option>
+                    <option value="computer">Computer</option>
+                    <option value="eletrical">Eletrical</option>
+                    <option value="machanical">Machaniacal</option>
+                    <option value="civil">Civil</option>
+                    <option value="bPharm">B.pharm</option>
+                    <option value="mPharm">M.pharm</option>
+                    <option value="other">Other</option>
+                </select>
+                
+            </div>  
+
+            <div>
+                <label for="image">Select image</label>
+                <input type="file" name="file" id="image" >
+            </div>
+
+            <div id="btnConatiner">
+                <button type="submit" class="btn">Submit</button>
+                <button type="click" class="btn" id="clsButton" onclick="clearForm()">clear</button>
+            </div>
+           
+        </form>
+
+    </div>
+    
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
